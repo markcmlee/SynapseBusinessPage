@@ -1,0 +1,119 @@
+.spotlightContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1px;
+  z-index: 0;
+  // overflow: hidden;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom right,
+    $eightiesBlue,
+    $eightiesPurple
+  );
+  @media screen and (max-width: 850px) {
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: row;
+  content: url("../assets/output-onlinepngtools.png");
+  height: 250px;
+  width: 225px;
+  margin-left: 0;
+  margin-right: 90px;
+  margin-top: 115px;
+  @media screen and (max-width: 850px) {
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.rightSide {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: auto;
+  margin-top: 30px;
+  @media screen and (max-width: 850px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.synapseHeader {
+  font-family: "Comfortaa", cursive;
+  font-size: 5.5em;
+  color: $gray;
+  margin-block-end: 0.1em;
+  @media screen and (max-width: 850px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.smallerHeader {
+  font-family: "Comfortaa", cursive;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  font-size: 1.5em;
+  color: $gray;
+  @media screen and (max-width: 850px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.synapseDescription {
+  width: 30em;
+  color: $gray;
+  text-overflow: auto;
+  font-size: 1em;
+  @media screen and (max-width: 850px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.downloadButton {
+  font-family: "Verdana";
+  border: 1px solid darken($eightiesOrange, 10%);
+  font-size: 20px;
+  padding: 8px 5px;
+  text-decoration: none;
+  display: flex;
+  float: left;
+  display: relative;
+  border-radius: 10px;
+  color: $gray;
+  justify-content: center;
+  background-color: $eightiesOrange;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  &:hover {
+    box-shadow: 1px 1px 5px 2px $darkerPurple;
+    background-color: darken($eightiesOrange, 10%);
+    color: white;
+  }
+  &:active {
+    box-shadow: 1px 1px 5px 2px $darkerPurple;
+    background-color: darken($eightiesOrange, 40%);
+    color: white;
+  }
+  @media screen and (max-width: 850px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,40 @@
+.tutorialContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #585858;
+  h2 {
+    color: black;
+  }
+}
+.innerDiv {
+  max-width: 75%;
+}
+.tutorialHeader {
+  font-family: "Comfortaa";
+  font-size: 3.5em;
+  color: black;
+}
+li {
+  margin: 5px;
+}
+
+.tutorialServer {
+  content: url("../assets/tutorialServer.png");
+  border-radius: 3px;
+}
+
+.tutorialResource {
+  content: url("../assets/tutorialClient.png");
+  border-radius: 3px;
+}
+
+.decoratorExample {
+  margin-bottom: 100px;
+}
+
+.lastSentence {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
